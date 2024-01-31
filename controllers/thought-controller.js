@@ -6,7 +6,6 @@ module.exports = {
      .then((thoughts) => res.json(thoughts))
         .catch((err) => res.status(500).json(err));
       },
-
     },
 
     getOneThought ({ params }, res) {
@@ -106,7 +105,9 @@ module.exports = {
                       res.json({ message: "Deleted the reaction" });
                     })
                     .catch(err => res.status(500).json(err));
-                    }
+                    };
+                  
+                  
                   
                 
                 
